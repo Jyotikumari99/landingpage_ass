@@ -22,13 +22,7 @@ const ProductList = () => {
       });
   }, [category]);
 
-  const categories = [
-    "Seafood", // Adjusted to match API category names
-    "Beef",
-    "Chicken",
-    "Vegetarian",
-    "Dessert",
-  ];
+  const categories = ["Seafood", "Beef", "Chicken", "Vegetarian", "Dessert"];
 
   return (
     <div className="container mx-auto mt-12">
@@ -61,7 +55,7 @@ const ProductList = () => {
             <div className="flex items-center space-x-4">
               <img
                 src={meal.strMealThumb}
-                className="w-16 h-16 rounded-full object-cover"
+                className="w-16 h-16 rounded-full object-cover bg-[#F9F5F0]"
                 alt={meal.strMeal}
               />
               <div>
@@ -75,7 +69,7 @@ const ProductList = () => {
                 <p className="text-gray-600">Lorem ipsum dolor sit</p>
                 <a
                   href="#"
-                  className="  text-green-700 py-2 px-4 rounded inline-block"
+                  className="text-green-700 py-2 px-4 rounded inline-block"
                 >
                   Shop Now →
                 </a>
