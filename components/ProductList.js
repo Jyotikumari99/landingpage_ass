@@ -30,11 +30,11 @@ const ProductList = () => {
       <h2 className="text-3xl font-bold text-center mb-6">
         Top Category Of Organic Food
       </h2>
-      <div className="flex justify-center mb-8">
+      <div className="flex flex-wrap justify-center mb-8">
         {categories.map((cat) => (
           <button
             key={cat}
-            className={`btn mx-2 py-2 px-4 rounded ${
+            className={`btn mx-2 my-2 py-2 px-4 rounded ${
               cat === category
                 ? "bg-green-700 text-white border rounded-3xl"
                 : "border rounded-3xl border-gray-400 bg-slate-100"
@@ -45,7 +45,7 @@ const ProductList = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 ml-11">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {meals.map((meal) => (
           <div
             key={meal.idMeal}
