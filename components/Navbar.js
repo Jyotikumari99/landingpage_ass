@@ -11,7 +11,7 @@ const Navbar = () => {
   const navItems = ["Home", "Groceries", "Pages"];
 
   return (
-    <nav className="bg-[#F9F5F0] shadow-md fixed top-0 left-0 right-0 z-50">
+    <nav className="  fixed top-0 left-0 right-0 z-50">
       <div className="max-w-screen-2xl mx-auto px-4 md:px-20 flex justify-between items-center h-16">
         <div className="flex items-center space-x-2">
           <h1 className="font-semibold text-xl cursor-pointer">
@@ -33,16 +33,22 @@ const Navbar = () => {
           <button className="text-white bg-[#3A5B3B] px-4 py-2 rounded-lg">
             Connect with us →
           </button>
-          <FiSearch size={20} className="" />
-          <FiUser size={20} />
-          <div className="relative">
-            <FiHeart size={20} />
+          <div className="relative w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center">
+            <FiSearch size={20} className="icon-border" />
+          </div>
+
+          <div className="relative w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center">
+            <FiUser size={20} className="icon-border" />
+          </div>
+
+          <div className="relative w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center">
+            <FiHeart size={20} className="icon-border" />
             <span className="absolute -top-2 -right-2 text-xs text-white bg-yellow-500 rounded-full w-5 h-5 flex items-center justify-center">
               2
             </span>
           </div>
-          <div className="relative">
-            <FiShoppingBag size={20} />
+          <div className=" relative w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center">
+            <FiShoppingBag size={20} className="icon-border" />
             <span className="absolute -top-2 -right-2 text-xs text-white bg-yellow-500 rounded-full w-5 h-5 flex items-center justify-center">
               0
             </span>

@@ -36,7 +36,7 @@ const ProductList = () => {
             key={cat}
             className={`btn mx-2 my-2 py-2 px-4 rounded ${
               cat === category
-                ? "bg-green-700 text-white border rounded-3xl"
+                ? "bg-[#3A5B3B] text-white border rounded-3xl"
                 : "border rounded-3xl border-gray-400 bg-slate-100"
             }`}
             onClick={() => setCategory(cat)}
@@ -69,7 +69,7 @@ const ProductList = () => {
                 <p className="text-gray-600">Lorem ipsum dolor sit</p>
                 <a
                   href="#"
-                  className="text-green-700 py-2 px-4 rounded inline-block"
+                  className="text-[#3A5B3B] py-2 px-4 rounded inline-block"
                 >
                   Shop Now →
                 </a>
