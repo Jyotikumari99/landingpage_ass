@@ -1,0 +1,25 @@
+{
+    "name": "onefinnet",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 3001",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "lucide-react": "^0.400.0",
+        "next": "14.2.4",
+        "react": "^18",
+        "react-dom": "^18",
+        "react-icons": "^5.2.1",
+        "react-scroll": "^1.9.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "postcss": "^8.4.39",
+        "tailwindcss": "^3.4.4"
+    }
+}
