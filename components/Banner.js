@@ -48,6 +48,7 @@ const Banner = () => (
         // layout="responsive"
         width={1500}
         height={600}
+        className="w-screen  "
       />
     </div>
   </div>

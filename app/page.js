@@ -1,20 +1,13 @@
-import Head from "next/head";
-import Banner from "../components/Banner";
-import ProductList from "../components/ProductList";
-import "../app/globals.css";
-import Navbar from "@/components/Navbar";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Products from "./components/Products";
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Restaurant Landing</title>
-      </Head>
-      <div>
-        <Navbar />
-        <Banner />
-        <ProductList />
-      </div>
-    </>
-  );
+    return (
+        <main>
+            <Header />
+            <Hero />
+            <Products />
+        </main>
+    );
 }
